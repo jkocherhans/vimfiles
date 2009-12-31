@@ -1,2 +1,5 @@
 backup/*
 tmp/*
+doc/tags
+*.pyc
+
