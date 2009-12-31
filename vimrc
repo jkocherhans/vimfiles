@@ -43,6 +43,7 @@ if has("gui_macvim")
     set guioptions=eg   " turn off scrollbars
     set lines=60
     set columns=110
+    set fuoptions=maxhorz,maxvert " use full width/height in fullscreen mode
     set cursorline
     set gcr=n:blinkon0  " don't blink in normal mode
 endif
