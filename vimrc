@@ -22,6 +22,8 @@ set tabstop=4
 set formatoptions-=t
 set formatoptions-=c
 
+set hidden " don't lose buffer history when one isn't showing in a window
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bindings
 
