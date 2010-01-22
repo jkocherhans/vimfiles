@@ -48,6 +48,7 @@ if has("gui_macvim")
     set fuoptions=maxhorz,maxvert " use full width/height in fullscreen mode
     set cursorline
     set gcr=n:blinkon0  " don't blink in normal mode
+    set selectmode=mouse " enter select mode instead of visual mode for mouse selections
 endif
 
 set wildmode=longest,list
