@@ -32,6 +32,9 @@ nnoremap <Leader>tl :TlistToggle<Enter>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" restrict session options so most things will just be read from .vimrc
+set sessionoptions=blank,buffers,curdir,help,resize,tabpages,winsize
+
 if has("gui_macvim")
     set number
     " clear the current search highlighting in insert mode
