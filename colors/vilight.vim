@@ -29,7 +29,7 @@ hi NonText        guifg=#34383c           guibg=#000020
 hi Search         guifg=#f8f8f8           guibg=#4f94cd
 hi SpecialKey     guifg=#34383c           guibg=#000020
 hi StatusLine     guifg=#0E2231           guibg=#8693A5
-hi StatusLineNC   guifg=#0e2231           guibg=#8693a5
+hi StatusLineNC   guifg=#0E2231           guibg=#666666
 hi Visual         guifg=#f8f8f8           guibg=#4f94cd
 hi WildMenu       guifg=#9b70f3           guibg=#0e2231
 hi MatchParen	  guifg=#f8f8f8		      guibg=#4f94cd
