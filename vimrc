@@ -29,6 +29,7 @@ set hidden " don't lose buffer history when one isn't showing in a window
 
 nnoremap <Leader>nt :NERDTreeToggle<Enter>
 nnoremap <Leader>tl :TlistToggle<Enter>
+nnoremap <Leader>sl :SessionList<Enter>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

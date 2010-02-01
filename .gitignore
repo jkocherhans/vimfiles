@@ -1,5 +1,6 @@
 backup/*
 tmp/*
+sessions/*
 doc/tags
 *.pyc
 .netrwhist
