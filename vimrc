@@ -58,7 +58,8 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.beam
 set list
 set listchars=tab:‣\ ,eol:¬,trail:· " show tabs, trailing whitespace, and linebreaks similar to TextMate
 
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+let Tlist_Show_One_File = 1 " Only show the tags for the current buffer
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
