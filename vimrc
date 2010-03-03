@@ -1,7 +1,9 @@
 " from http://b4winckler.wordpress.com/2009/07/10/a-minimal-vim-configuration/
 set nocompatible
-set bs=indent,eol,start
+set backspace=indent,eol,start
 syntax on
+
+set noerrorbells
 
 " highlight searches and make them case insensetive if no caps are used
 set hls is ic scs
