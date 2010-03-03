@@ -4,4 +4,5 @@ sessions/*
 doc/tags
 *.pyc
 .netrwhist
+.DS_Store
 
