@@ -7,7 +7,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name="twilight"
+let g:colors_name="vilight"
 
 "hi Normal         guifg=#F8F8F8           guibg=#141414
 hi Normal         guifg=#dbdda6           guibg=#000020
@@ -87,3 +87,19 @@ hi link Conditional     Statement
 hi link StorageClass    Statement
 hi link Operator        Statement
 hi link Statement       Statement
+
+
+" diff hightlighting
+hi DiffAdd      guifg=#CEF4F8   guibg=#324A2E
+hi DiffDelete   guifg=#CEF4F8   guibg=#52120B
+"hi DiffChange
+"hi DiffText
+"
+hi diffFile     guifg=#CEF4F8   guibg=#112E3F
+hi diffNewfile  guifg=#CEF4F8   guibg=#112E3F
+
+hi link diffAdded       DiffAdd
+hi link diffRemoved     DiffDelete
+hi link diffLine        Visual
+hi link diffSubname     Normal
+
