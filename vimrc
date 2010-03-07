@@ -21,8 +21,9 @@ set fileformats=unix,dos,mac " support all three, in this order
 set shiftwidth=4 softtabstop=4 expandtab
 set tabstop=4
 
-set formatoptions-=t
-set formatoptions-=c
+" Auto-wrap comments at 79 chars.
+set formatoptions=qcr
+set textwidth=79
 
 set hidden " don't lose buffer history when one isn't showing in a window
 
