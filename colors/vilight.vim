@@ -40,7 +40,7 @@ hi Title          guifg=#cf6a4c           guibg=#141414
 "Syntax hilight groups
 
 hi Comment        guifg=#665f57
-hi Constant       guifg=#7587a6
+hi Constant       guifg=#CF6A4C
 hi String         guifg=#8f9d6a
 hi Variable       guifg=#7587a6
 hi Number         guifg=#cf6a4c
@@ -64,12 +64,16 @@ hi PmenuSel       guifg=#cda869          guibg=#0e2231
 hi PmenuSbar      guibg=#665f57
 hi PmenuThumb     guifg=#a6a6a6
 
+hi Function     guifg=#9B703F
+hi Include      guifg=#9B703F
+
 " python function names
 hi link Entity Number
 hi link Support Constant
 
 "hi link Define          Entity
-"hi link Function        Entity
+hi link Function        Entity
+hi link Include         Entity
 
 hi link Structure       Support
 hi link Special         Support
