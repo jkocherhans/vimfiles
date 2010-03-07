@@ -64,6 +64,18 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.beam
 set list
 set listchars=tab:‣\ ,eol:¬,trail:· " show tabs, trailing whitespace, and linebreaks similar to TextMate
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Omnicomplete
+
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" tlist
+
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 let Tlist_Show_One_File = 1 " Only show the tags for the current buffer
 
@@ -91,6 +103,7 @@ set statusline+=%r      "read only flag
 set statusline+=%m      "modified flag
 
 set statusline+=%=      "left/right separator
+
 set statusline+=%{StatuslineCurrentHighlight()}\ \ "current highlight
 set statusline+=%c:     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
