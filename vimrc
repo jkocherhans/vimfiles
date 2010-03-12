@@ -64,6 +64,7 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.beam
 set list
 set listchars=tab:‣\ ,eol:¬,trail:· " show tabs, trailing whitespace, and linebreaks similar to TextMate
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Omnicomplete
 
