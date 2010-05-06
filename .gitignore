@@ -5,4 +5,5 @@ doc/tags
 *.pyc
 .netrwhist
 .DS_Store
+.VimballRecord
 
