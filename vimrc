@@ -46,7 +46,7 @@ if has("gui_macvim")
 
     set bg=dark
     colorscheme vilight
-    set guifont=Andale\ Mono:h10
+    set guifont=Inconsolata:h11
     set linespace=1     " Extra space between lines
     set go-=T           " hide the toolbar (MacVim)
     set guioptions=eg   " turn off scrollbars
