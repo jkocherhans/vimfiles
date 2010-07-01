@@ -57,6 +57,11 @@ if has("gui_macvim")
     set gcr=n:blinkon0  " don't blink in normal mode
 endif
 
+if has("gui_macvim")
+  macmenu &File.New\ Tab key=<nop>
+  map <D-t> :CommandT<CR>
+endif
+
 set wildmode=longest,list
 set suffixes+=.pyc
 set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.beam
