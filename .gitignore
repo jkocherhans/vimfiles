@@ -2,6 +2,7 @@ backup/*
 tmp/*
 sessions/*
 doc/tags
+tags
 *.pyc
 .netrwhist
 .DS_Store
