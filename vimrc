@@ -165,12 +165,6 @@ set guitablabel=%{GuiTabLabel()}
 "
 let g:python_highlight_all=1
 
-command! Pyflakes :call Pyflakes()
-function! Pyflakes()
-    set makeprg=pyflakes
-    make "%"
-    cw
-endfunction
 
 " Save as sudo
 cmap w!! %!sudo tee > /dev/null %
