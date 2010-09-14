@@ -13,11 +13,9 @@ set hls is ic scs
 filetype plugin indent on
 set ruler
 
-set backup " make backup files
-set backupdir=~/.vim/backup " where to put backup files
-set directory=~/.vim/tmp " directory to place swap files in
+set nobackup
+set noswapfile
 set fileformats=unix,dos,mac " support all three, in this order
-
 
 " Use 4 spaces for indentation and replace tabs with spaces in a smart way
 set shiftwidth=4 softtabstop=4 expandtab
