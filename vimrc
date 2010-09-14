@@ -1,3 +1,5 @@
+call pathogen#runtime_append_all_bundles()
+
 " from http://b4winckler.wordpress.com/2009/07/10/a-minimal-vim-configuration/
 set nocompatible
 set backspace=indent,eol,start
