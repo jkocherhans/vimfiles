@@ -1,5 +1,3 @@
-call pathogen#runtime_append_all_bundles()
-
 " from http://b4winckler.wordpress.com/2009/07/10/a-minimal-vim-configuration/
 set nocompatible
 set backspace=indent,eol,start
@@ -148,7 +146,10 @@ set guitablabel=%{GuiTabLabel()}
 "
 let g:python_highlight_all=1
 
-
 " Save as sudo
 cmap w!! %!sudo tee > /dev/null %
 
+map <Leader>f :Ack<space>
+map <Leader>gx :!gitx .<CR>
+
+call pathogen#runtime_append_all_bundles()
