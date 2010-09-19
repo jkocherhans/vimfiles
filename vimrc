@@ -72,6 +72,7 @@ nnoremap <Leader>tl :TlistToggle<Enter>
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 let Tlist_Show_One_File = 1           " Only show the tags for the current buffer.
 let Tlist_Close_On_Select = 1         " Close the Tlist window when a tag is selected.
+let Tlist_Process_File_Always = 1     " Process tags even when Tlist is not open.
 let Tlist_GainFocus_On_ToggleOpen = 1 " Give the Tlist window focus on :TlistToggle.
 
 
@@ -99,20 +100,10 @@ set statusline+=%m      "modified flag
 
 set statusline+=%=      "left/right separator
 
-set statusline+=%{StatuslineCurrentHighlight()}\ \ "current highlight
+set statusline+=%<%=%([%{Tlist_Get_Tagname_By_Line()}]\ %)
 set statusline+=%c:     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
-
-"return the syntax highlight group under the cursor ''
-function! StatuslineCurrentHighlight()
-    let name = synIDattr(synID(line('.'),col('.'),1),'name')
-    if name == ''
-        return ''
-    else
-        return '[' . name . ']'
-    endif
-endfunction
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
