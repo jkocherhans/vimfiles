@@ -62,14 +62,22 @@ set listchars=tab:‣\ ,eol:¬,trail:· " show tabs, trailing whitespace, and li
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" NERD_tree plugin options
+" bufexplorer
+
+let g:bufExplorerShowRelativePath = 1 " Show relative paths.
+let g:bufExplorerSplitOutPathName = 0 " Don't split the path and filename.
+let g:bufExplorerShowDirectories = 0  " Don't show directories. e.g. `:e somedir`.
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nerdtree
 
 nnoremap <Leader>nt :NERDTreeToggle<Enter>
 let NERDTreeQuitOnOpen = 1 " Close the NERD_tree window when a file is selected.
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" taglist plugin options
+" taglist
 
 nnoremap <Leader>tl :TlistToggle<Enter>
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
@@ -108,11 +116,6 @@ set statusline+=%c:     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" BufExplorer
-"
-let g:bufExplorerShowRelativePath=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " http://blog.golden-ratio.net/2008/08/19/using-tabs-in-vim/
