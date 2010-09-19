@@ -31,7 +31,6 @@ set hidden " don't lose buffer history when one isn't showing in a window
 " bindings
 
 nnoremap <Leader>nt :NERDTreeToggle<Enter>
-nnoremap <Leader>tl :TlistToggle<Enter>
 nnoremap <Leader>sl :SessionList<Enter>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -67,10 +66,13 @@ set listchars=tab:‣\ ,eol:¬,trail:· " show tabs, trailing whitespace, and li
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" tlist
+" taglist plugin options
 
+nnoremap <Leader>tl :TlistToggle<Enter>
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
-let Tlist_Show_One_File = 1 " Only show the tags for the current buffer
+let Tlist_Show_One_File = 1           " Only show the tags for the current buffer.
+let Tlist_Close_On_Select = 1         " Close the Tlist window when a tag is selected.
+let Tlist_GainFocus_On_ToggleOpen = 1 " Give the Tlist window focus on :TlistToggle.
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
