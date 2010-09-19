@@ -28,7 +28,6 @@ set hidden " don't lose buffer history when one isn't showing in a window
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bindings
 
-nnoremap <Leader>nt :NERDTreeToggle<Enter>
 nnoremap <Leader>sl :SessionList<Enter>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -61,6 +60,12 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.beam
 set list
 set listchars=tab:‣\ ,eol:¬,trail:· " show tabs, trailing whitespace, and linebreaks similar to TextMate
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERD_tree plugin options
+
+nnoremap <Leader>nt :NERDTreeToggle<Enter>
+let NERDTreeQuitOnOpen = 1 " Close the NERD_tree window when a file is selected.
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
