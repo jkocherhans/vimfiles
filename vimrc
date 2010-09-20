@@ -158,6 +158,6 @@ let g:python_highlight_all=1
 cmap w!! %!sudo tee > /dev/null %
 
 map <Leader>f :Ack<space>
-map <Leader>gx :!gitx .<CR>
+map <Leader>gx :!gitx .<CR><CR>
 
 call pathogen#runtime_append_all_bundles()
