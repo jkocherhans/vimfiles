@@ -65,6 +65,9 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.beam
 set list
 set listchars=tab:‣\ ,eol:¬,trail:· " show tabs, trailing whitespace, and linebreaks similar to TextMate
 
+autocmd FileType html,htmldjango,javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType html,htmldjango setlocal noautoindent nosmartindent
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bufexplorer
