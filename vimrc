@@ -1,3 +1,9 @@
+" Turn filetype off so we can force-reload ftdetect files after pathogen loads.
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+filetype plugin indent on
+
 " from http://b4winckler.wordpress.com/2009/07/10/a-minimal-vim-configuration/
 set nocompatible
 set backspace=indent,eol,start
@@ -8,7 +14,6 @@ set noerrorbells
 " highlight searches and make them case insensetive if no caps are used
 set hls is ic scs
 
-filetype plugin indent on
 set ruler
 
 set nobackup
@@ -59,6 +64,9 @@ set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.beam
 
 set list
 set listchars=tab:‣\ ,eol:¬,trail:· " show tabs, trailing whitespace, and linebreaks similar to TextMate
+
+autocmd FileType html,htmldjango,javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType html,htmldjango setlocal noautoindent nosmartindent
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -162,5 +170,3 @@ cmap w!! %!sudo tee > /dev/null %
 
 map <Leader>f :Ack<space>
 map <Leader>gx :!gitx .<CR><CR>
-
-call pathogen#runtime_append_all_bundles()
