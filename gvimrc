@@ -6,4 +6,8 @@ if has("gui_macvim")
   " Exit insert mode before saving with cmd-s
   iunmenu File.Save
   imenu <silent> File.Save <Esc>:if expand("%") == ""<Bar>browse confirm w<Bar>else<Bar>confirm w<Bar>endif<CR>
+
+  " Stop the middle mouse button from pasting
+  map <MiddleMouse> <Nop>
+  imap <MiddleMouse> <Nop>
 endif
