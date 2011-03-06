@@ -102,6 +102,16 @@ let Tlist_GainFocus_On_ToggleOpen = 1 " Give the Tlist window focus on :TlistTog
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" tagbar
+" https://github.com/majutsushi/tagbar
+
+nnoremap <Leader>tb :TagbarToggle<Enter>
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+let g:tagbar_compact = 1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " statusline 
 " mostly from http://github.com/scrooloose/vimfiles/blob/master/vimrc
 
