@@ -183,3 +183,6 @@ cmap w!! %!sudo tee > /dev/null %
 
 map <Leader>f :Ack<space>
 map <Leader>gx :!gitx .<CR><CR>
+
+" Use buffkill.vim for bd
+cmap bd :BD
