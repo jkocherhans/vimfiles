@@ -88,6 +88,7 @@ let g:bufExplorerSplitOutPathName = 1 " Don't split the path and filename.
 
 nnoremap <Leader>nt :NERDTreeToggle<Enter>
 let NERDTreeQuitOnOpen = 1 " Close the NERD_tree window when a file is selected.
+let NERDTreeHijackNetrw = 0 " Don't hijack netrw for exploring the local filesystem.
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
