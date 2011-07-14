@@ -75,12 +75,12 @@ autocmd FileType html,htmldjango setlocal noautoindent nosmartindent
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bufexplorer
 
-let g:bufExplorerSortBy='name'
-let g:bufExplorerFindActive=0         " Open the selected buffer in the current window.
-let g:bufExplorerShowTabBuffer = 1    " Only show buffers open in the current tab page.
+let g:bufExplorerSortBy='mru'
+let g:bufExplorerFindActive=1         " Open the selected buffer in the current window.
+let g:bufExplorerShowTabBuffer = 0    " Only show buffers open in the current tab page.
 let g:bufExplorerShowDirectories = 0  " Don't show directories. e.g. `:e somedir`.
 let g:bufExplorerShowRelativePath = 1 " Show relative paths.
-let g:bufExplorerSplitOutPathName = 0 " Don't split the path and filename.
+let g:bufExplorerSplitOutPathName = 1 " Don't split the path and filename.
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
