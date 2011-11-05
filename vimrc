@@ -37,6 +37,7 @@ set hidden " don't lose buffer history when one isn't showing in a window
 " bindings
 
 nnoremap <Leader>sl :SessionList<Enter>
+nnoremap <leader>a :Ack <cword><CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
