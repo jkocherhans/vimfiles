@@ -10,3 +10,6 @@
 [submodule "tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/session"]
+	path = bundle/session
+	url = https://github.com/xolox/vim-session.git
