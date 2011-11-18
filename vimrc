@@ -47,7 +47,7 @@ set sessionoptions=blank,buffers,curdir,help,resize,tabpages,winsize
 if has("gui_macvim")
     set number
     " clear the current search highlighting in insert mode
-    nmap <silent> <esc> :noh<CR>
+    nnoremap <silent> <esc> :noh<CR>
 
     set bg=dark
     colorscheme vilight
@@ -199,10 +199,10 @@ augroup END
 let g:python_highlight_all=1
 
 " Save as sudo
-cmap w!! %!sudo tee > /dev/null %
+cnoremap w!! %!sudo tee > /dev/null %
 
-map <Leader>f :Ack<space>
-map <Leader>gx :!gitx .<CR><CR>
+noremap <Leader>f :Ack<space>
+noremap <Leader>gx :!gitx .<CR><CR>
 
 " Use buffkill.vim for bd
-cmap bd :BD
+cnoremap bd :BD
