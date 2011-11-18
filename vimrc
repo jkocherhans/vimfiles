@@ -14,6 +14,8 @@ syntax on
 
 set noerrorbells
 
+set linebreak " soft-wrap at word boundaries
+
 " highlight searches and make them case insensetive if no caps are used
 set hls is ic scs
 
