@@ -35,13 +35,54 @@ set textwidth=79
 
 set hidden " don't lose buffer history when one isn't showing in a window
 
+let mapleader="\\"
+let localleader="\\"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bindings
+
+" Edit and source .vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr> :echo "done!"
+
+" move the current line down
+nnoremap <leader>- ddp
+" move the current line up
+nnoremap <leader>_ ddkP
+
+inoremap <c-d> <esc>ddi
+
+" Upper case a word in insert or normal mode.
+inoremap <c-u> <esc>viwUea
+nnoremap <c-u> viwUe
+
 
 nnoremap <Leader>sl :SessionList<Enter>
 nnoremap <leader>a :Ack <cword><CR>
 
+" Wrap words and visual selections in quotes
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+vnoremap <leader>" <esc>a"<esc>gvo<esc>i"<esc>gvo<esc>
+
+" User H and L to go to the beginnings and ends of lines
+nnoremap H 0
+nnoremap L $
+
+" Change exiting insert mode to jk and make it a pain to use the old way.
+inoremap jk <esc>
+"inoremap <esc> <nop>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" abbreviations
+
+iabbrev idb from django.db import models
+iabbrev eb everyblock
+iabbrev mod models
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 " restrict session options so most things will just be read from .vimrc
 set sessionoptions=blank,buffers,curdir,help,resize,tabpages,winsize
@@ -208,3 +249,4 @@ noremap <Leader>gx :!gitx .<CR><CR>
 
 " Use buffkill.vim for bd
 cnoremap bd :BD
+
