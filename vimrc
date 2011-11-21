@@ -46,30 +46,11 @@ nnoremap <leader>a :Ack <cword><CR>
 " restrict session options so most things will just be read from .vimrc
 set sessionoptions=blank,buffers,curdir,help,resize,tabpages,winsize
 
-if has("gui_macvim")
-    set number
-    " clear the current search highlighting in insert mode
-    nnoremap <silent> <esc> :noh<CR>
-
-    set bg=dark
-    colorscheme vilight
-    set guifont=Inconsolata:h11
-    set linespace=1     " Extra space between lines
-    set go-=T           " hide the toolbar (MacVim)
-    set guioptions=eg   " turn off scrollbars
-    set lines=60
-    set columns=110
-    set fuoptions=maxhorz,maxvert " use full width/height in fullscreen mode
-    set cursorline
-    set gcr=n:blinkon0  " don't blink in normal mode
-endif
-
 set wildmode=longest,list
 set suffixes+=.pyc
 set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc,*.beam
 
 set list
-set listchars=tab:‣\ ,eol:¬,trail:· " show tabs, trailing whitespace, and linebreaks similar to TextMate
 
 autocmd FileType html,htmldjango,javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType html,htmldjango setlocal noautoindent nosmartindent
