@@ -66,6 +66,7 @@ autocmd FileType html,htmldjango setlocal noautoindent nosmartindent
 " vim-session https://github.com/xolox/vim-session
 
 let g:session_autoload='no'
+let g:session_autosave='yes'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bufexplorer
