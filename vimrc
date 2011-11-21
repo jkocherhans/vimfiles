@@ -45,6 +45,8 @@ nnoremap <leader>a :Ack <cword><cr>
 nnoremap <leader>ev :split $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+nnoremap <leader>tf :CommandTFlush<cr>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " restrict session options so most things will just be read from .vimrc
