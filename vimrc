@@ -41,6 +41,9 @@ set hidden " don't lose buffer history when one isn't showing in a window
 nnoremap <Leader>sl :SessionList<Enter>
 nnoremap <leader>a :Ack <cword><CR>
 
+nnoremap <leader>ev :split $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " restrict session options so most things will just be read from .vimrc
