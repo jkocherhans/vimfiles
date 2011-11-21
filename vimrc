@@ -38,9 +38,9 @@ set hidden " don't lose buffer history when one isn't showing in a window
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bindings
 
-nnoremap <leader>a :Ack <cword><CR>
 nnoremap <Leader>s :OpenSession!<cr>
 nnoremap <Leader>eb :OpenSession! everyblock<cr>
+nnoremap <leader>a :Ack <cword><cr>
 
 nnoremap <leader>ev :split $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
