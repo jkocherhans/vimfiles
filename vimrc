@@ -35,6 +35,8 @@ set textwidth=79
 
 set hidden " don't lose buffer history when one isn't showing in a window
 
+set switchbuf=usetab " switch to another tab+window if a buffer is already open there
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " bindings
 
