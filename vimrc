@@ -155,12 +155,6 @@ function! GuiTabLabel()
             break
         endif
     endfor
-
-    " count number of open windows in the tab
-    let wincount = tabpagewinnr(v:lnum, '$')
-    if wincount > 1
-        let label .= ', '.wincount
-    endif
     let label .= '] '
 
     " add the file name without path information
