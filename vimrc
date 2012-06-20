@@ -198,9 +198,18 @@ noremap <Leader>gx :!gitx .<CR><CR>
 " Use buffkill.vim for bd
 cnoremap bd :BD
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " pydoc.vim
 " http://www.vim.org/scripts/script.php?script_id=910
-"
+
 let g:pydoc_open_cmd = 'tabnew'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ctrlp.vim
+" http://kien.github.com/ctrlp.vim/
+
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
 
